@@ -10,12 +10,12 @@ function setup() {
 	background(51);
 	yoff = 0;
 	reverse = false;
-	depthSlider = createSlider(0, 255, 100);
+	depthSlider = createSlider(0, 140, 100);
 	depthSlider.position(100, 300);
 	depthSlider.value(30);
 
 	speedSlider = createSlider(0, 255, 100);
-	speedSlider.position(200, 300);
+	speedSlider.position(300, 300);
 	speedSlider.value(0.1);
 
 	
