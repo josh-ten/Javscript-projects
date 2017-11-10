@@ -4,7 +4,7 @@ function Thumbstick(x, y) {
 }
 
 function touchEnded() {
-    this.direction.mult(0);
+    // this.direction.mult(0);
 }
 
 Thumbstick.prototype.update = function() {

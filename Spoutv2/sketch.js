@@ -15,8 +15,9 @@ function setup() {
 	gameOver = false;
 	score = 0;
 	scale = 8;
-	width = 400;
-	height = 400;
+	var ratio = 1;
+	width = screen.innerwidth * ratio;
+	height = screen.innerheight * ratio;
 	w = floor(width/scale);
 	h = floor(height/scale);
 	createCanvas(width, height);
