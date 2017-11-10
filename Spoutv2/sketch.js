@@ -14,10 +14,9 @@ const W = 87, A = 65, S = 83, D = 68;
 function setup() {
 	gameOver = false;
 	score = 0;
-	scale = 8;
-	var ratio = 1;
-	width = screen.innerwidth * ratio;
-	height = screen.innerheight * ratio;
+	scale = 16;
+	width = window.innerWidth;
+	height = window.innerHeight;
 	w = floor(width/scale);
 	h = floor(height/scale);
 	createCanvas(width, height);
