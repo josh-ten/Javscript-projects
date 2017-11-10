@@ -78,5 +78,14 @@ function gameEnd() {
 	player.explode();
 	
 	gameOver = true;
+	saveScore();
+}
 
+function saveScore() {
+	console.log("m");
+	var data = new FormData();
+	data.append("data" , "the_text_you_want_to_save");
+	var xhr = new XMLHttpRequest();	
+	xhr.open('post', 'saveScore.php', true);
+	xhr.send(data);
 }

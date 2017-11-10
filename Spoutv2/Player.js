@@ -77,7 +77,6 @@ Player.prototype.move = function() {
 
 Player.prototype.touchMove = function(direction) {
     this.acc.add(direction.mult(this.thrust));
-    console.log(direction);
 }
 
 Player.prototype.constrain = function() {    
