@@ -20,6 +20,6 @@ Thumbstick.prototype.update = function() {
 
 Thumbstick.prototype.draw = function() {
     fill(0, 150);
-    ellipse(this.pos.x + (this.direction.x * 200), 
-            this.pos.y + (this.direction.y * 200), 50);
+    ellipse(this.pos.x - (this.direction.x * 200), 
+            this.pos.y - (this.direction.y * 200), 50);
 }
