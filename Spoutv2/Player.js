@@ -61,16 +61,16 @@ Player.prototype.update = function() {
 }
 
 Player.prototype.move = function() {
-    if (keyIsDown(W)) {
+    if (keyIsDown(W) || keyIsDown(UP)) {
         this.acc.y -= this.thrust;
     } 
-    if (keyIsDown(S)) {
+    if (keyIsDown(S) || keyIsDown(DOWN)) {
 		this.acc.y += this.thrust;
     }
-    if (keyIsDown(A)) {
+    if (keyIsDown(A) || keyIsDown(LEFT)) {
 		this.acc.x -= this.thrust;
     } 
-    if (keyIsDown(D)) {
+    if (keyIsDown(D) || keyIsDown(RIGHT)) {
 		this.acc.x += this.thrust;
     }
 }

@@ -10,15 +10,16 @@ var score;
 var thumbStick;
 
 const W = 87, A = 65, S = 83, D = 68;
+const UP = 38, LEFT = 37, DOWN = 40, RIGHT = 39;
 
 function setup() {
 	gameOver = false;
 	score = 0;
 	scale = 16;
-	width = window.innerWidth;
-	height = window.innerHeight;
-	w = floor(width/scale);
-	h = floor(height/scale);
+	width = window.innerWidth-5;
+	height = window.innerHeight-5;
+	w = width/scale;
+	h = height/scale;
 	createCanvas(width, height);
 
 	// scaleSlider = createSlider(8, 16, 8);
