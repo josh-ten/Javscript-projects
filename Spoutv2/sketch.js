@@ -7,6 +7,7 @@ var gui;
 var gameOver;
 var os;
 var score;
+var thumbStick;
 
 const W = 87, A = 65, S = 83, D = 68;
 
@@ -24,6 +25,7 @@ function setup() {
 	// scaleSlider.position(100, height+10);
 	// scaleSlider.input(changeScale);
 
+	thumbStick = new Thumbstick(width/2, height * 0.8);
 	os = new ObstacleSpawner();
 	player = new Player(w/2, h/2, 2);
 	gui = new GUI();
@@ -59,6 +61,7 @@ function draw() {
 	player.update();	
 
 	gui.draw();
+	thumbStick.update();
 	
 	// console.log(floor(frameRate()));
 }
