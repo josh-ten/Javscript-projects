@@ -20,9 +20,9 @@ function setup() {
 	h = floor(height/scale);
 	createCanvas(width, height);
 
-	scaleSlider = createSlider(8, 16, 8);
-	scaleSlider.position(100, height+10);
-	scaleSlider.input(changeScale);
+	// scaleSlider = createSlider(8, 16, 8);
+	// scaleSlider.position(100, height+10);
+	// scaleSlider.input(changeScale);
 
 	os = new ObstacleSpawner();
 	player = new Player(w/2, h/2, 2);
@@ -63,12 +63,12 @@ function draw() {
 	// console.log(floor(frameRate()));
 }
 
-function changeScale() {
-	scale = scaleSlider.value();
-	w = floor(width/scale);
-	h = floor(height/scale);
-	calcBackground();
-}
+// function changeScale() {
+// 	scale = scaleSlider.value();
+// 	w = floor(width/scale);
+// 	h = floor(height/scale);
+// 	calcBackground();
+// }
 
 function gameEnd() {
 	player.explode();
