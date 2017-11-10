@@ -1,11 +1,10 @@
 function Thumbstick(x, y) {
-    this.touching = false;
     this.direction = createVector(0, 0);
     this.pos = createVector(x, y);
 }
 
-function touchStarted() {
-    this.touching = !this.touching;
+function touchEnded() {
+    this.direction.mult(0);
 }
 
 Thumbstick.prototype.update = function() {
@@ -20,7 +19,7 @@ Thumbstick.prototype.update = function() {
 }
 
 Thumbstick.prototype.draw = function() {
-    fill(0);
-    ellipse(this.pos.x + this.direction.x, 
-            this.pos.y + this.direction.y, 20);
+    fill(0, 150);
+    ellipse(this.pos.x + (this.direction.x * 200), 
+            this.pos.y + (this.direction.y * 200), 50);
 }
