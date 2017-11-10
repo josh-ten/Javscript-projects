@@ -24,7 +24,6 @@ function setup() {
 	// scaleSlider = createSlider(8, 16, 8);
 	// scaleSlider.position(100, height+10);
 	// scaleSlider.input(changeScale);
-	var ts = createCheckbox();
 
 	thumbStick = new Thumbstick(width/2, height * 0.8);
 	os = new ObstacleSpawner();

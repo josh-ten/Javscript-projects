@@ -22,6 +22,11 @@ function Player(x_, y_, size_) {
 }
 
 Player.prototype.update = function() { 
+    if (frameRate() < 30 && this.sprayAmt > 1)
+        this.sprayAmt--;
+    else if (this.sprayAmt < 10) 
+        this.sprayAmt++;
+
     if (!gameOver) {
         this.move();
 
