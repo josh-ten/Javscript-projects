@@ -86,6 +86,6 @@ function saveScore() {
 	var data = new FormData();
 	data.append("data" , "the_text_you_want_to_save");
 	var xhr = new XMLHttpRequest();	
-	xhr.open('post', '/saveScore.php', true);
+	xhr.open('session', '/saveScore.php', true);
 	xhr.send(data);
 }
