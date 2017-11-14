@@ -13,18 +13,13 @@ h1 {
     word-spacing: 30px;
 }
 
-th {
-    /* border: 2px solid white; */
-    font-size: 30px;
+td {
+    padding: 0.2%;
 }
 
 table {
     background-color: #888;
     width: 100%;
-    /* margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 80px; */
 }
 
 img {
