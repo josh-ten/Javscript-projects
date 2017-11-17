@@ -101,3 +101,16 @@ function findClosestAstronaut(pos) {
 	}
 	return index;
 }
+
+function findClosestSpaceship(pos) {
+	var index = -1;	
+	var minDist = width * 2;	
+	for (var i = 0; i < spaceships.length; i++) {
+		var distance = spaceships[i].pos.copy().sub(pos).mag();
+		if (distance < minDist) {
+			minDist = distance;
+			index = i;
+		}
+	}
+	return index;
+}

@@ -15,7 +15,7 @@ class Astronaut {
         this.attractor;
 		
 		this.name = person.name;
-        this.size = 20;
+        this.size = 30;
         this.hue = random(255);
         
         this.xoff = random(10000);
