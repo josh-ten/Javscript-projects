@@ -7,7 +7,7 @@ var yoff;
 var reverse;
 
 function setup() {
-  	createCanvas(400, 300);
+  	createCanvas(window.innerWidth-8, window.innerHeight-8);
   	colorMode(HSB);
   	gravity = createVector(0, 0.2);
   	stroke(255);

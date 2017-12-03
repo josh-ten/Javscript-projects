@@ -13,8 +13,9 @@ h1 {
     word-spacing: 30px;
 }
 
-td {
+tr {
     padding: 0.2%;
+    max-height: 10%;    
 }
 
 table {
@@ -23,16 +24,17 @@ table {
 }
 
 img {
-    width: 100%; 
-    height: 100%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 40%;
+    border: 2px black solid;
 }
-
+/* 
 .image {
     border: 2px solid #333;
-    width: 50%;
-    height: 50%;
     margin-bottom: 50px;
-}
+} */
 
 .description {
     width: 50%;
@@ -40,7 +42,7 @@ img {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 * {
