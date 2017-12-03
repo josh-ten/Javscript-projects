@@ -6,17 +6,14 @@ function setup() {
 	createCanvas(window.innerWidth-8, window.innerHeight-8);
 	background(0);
 
-	for (var i = 0; i < 10; i++) {
+	for (var i = 0; i < 4; i++) {
 		planets.push(new Planet(random(width), random(height), random(50, 100)));
 	}
-	// planets.push(new Planet(width/2,   random(200, height-200), 200));
-	// planets.push(new Planet(width-200, map(random(height), 0, height, 200, height-200), 100));	
-	// planets.push(new Planet(200, 	   map(random(height), 0, height, 200, height-200), 150));	
 }
 
 function draw() {
 	colorMode(RGB);
-	background(0, 50);
+	background(0, 150);
 	
 	for (var i = 0; i < planets.length; i++) {
 		planets[i].draw();
