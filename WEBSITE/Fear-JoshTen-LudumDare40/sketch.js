@@ -9,7 +9,7 @@ var canvCounter = 0;
 var colour = 0;
 var lives = 3;
 var gameOver = false;
-var maxZones = 20;
+var maxZones = 6;
 var maxEnemies = 15;
 
 const W = 87, A = 65, S = 83, D = 68;
