@@ -3,7 +3,7 @@ var averageSpeed;
 var orbitPoints = [];
 
 function setup() {
-	createCanvas(400, 400);
+	createCanvas(window.innerWidth, window.innerHeight);
 	averageSpeed = 0;
 	for (var i = 0; i < 1000; i++) {
 		particles.push(new Particle(random(width), random(height)));
