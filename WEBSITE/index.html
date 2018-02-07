@@ -1,144 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel='stylesheet' href='stylesheet.css' type='text/css' />
-        <link rel='stylesheet' href='grid.css' type='text/css' />        
+        <link rel='stylesheet' href='website/stylesheet.css' type='text/css' />
+        <link rel='stylesheet' href='website/grid.css' type='text/css' />        
+        <script type="text/javascript" src="index.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-        <script src="p5.min.js"></script>
-        <script type="text/javascript" src="jquery.js"></script>
-        <script type="text/javascript" src="generateBoxes.js"></script>
+        <script src="website/p5.min.js"></script>
+        <script
+			  src="http://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+        <script type="text/javascript" src="website/generateBoxes.js"></script>
+
         <title>Josh Ten JS</title>    
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>        
+    <body>      
+        <div class="topnav">
+            <a href="info.html">Test</a>
+            <a href="#">Test</a>
+            <a href="#">Test</a>
+        </div>
+
         <div class="content">
         <h1>Josh Ten JS</h1>
             <div id="display">
-                <div class="grid" id="grid">
-                    <!--<div class="item">
-                        <a href="Fear-JoshTen-LudumDare40/index.html">
-                        <div class="imageContainer">
-                            <div class="image">
-                                <img src="Fear-JoshTen-LudumDare40/demo.png">
-                            </div>
-                            <div class="dark"></div>
-                        </div></a>
-                        <div class="description">
-                        (Ludum Dare Entry) Fear: Avoid your fears but they'll still get worse.
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image"><a href="gravityLines/index.html">
-                        <img src="gravityLines/demo.gif" alt="test" style="height:50%;"></a></div>
-                        <div class="description">
-                        Gravity Lines: Gravity physics simulator
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image"><a href="gravityLinesv2/index.html">
-                        <img src="gravityLinesv2/demo.png" alt="test" style="height:50%;"></a></div>
-                        <div class="description">
-                        Gravity Lines2: Colourful instantaneous gravity physics simulator (Kinda trippy)
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image"><a href="Sproutv2/index.html">
-                        <img src="Sproutv2/demo1.gif" alt="test" style="height:50%;"></a></div>
-                        <div class="description">
-                        Sprout: Fly upwards through destructable terrain at increasing speeds.
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image"><a href="connectingVertices/index.html">
-                        <img src="connectingVertices/demo.gif" alt="test" style="height:50%;"></a></div>
-                        <div class="description">
-                        A cool little psychadelic geometry thing
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image"><a href="connectingVertices2/index.html">
-                        <img src="connectingVertices2/demo.gif" alt="test" style="height:50%;"></a></div>
-                        <div class="description">
-                        Flat travelling paths visualiser
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image"><a href="sineParticles/index.html">
-                        <img src="sineParticles/demo.gif" alt="test" style="height:50%;"></a></div>
-                        <div class="description">
-                        Sine Particles: Control the speed and depth of some particles following a sine wave!
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image"><a href="fractalTree/index.html">
-                        <img src="fractalTree/demo.gif" alt="test" style="height:50%;"></a></div>
-                        <div class="description">
-                        Psychadelic fractal tree :O
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image"><a href="flowingParticles/index.html">
-                        <img src="flowingParticles/demo.gif" alt="test" style="height:50%;"></a></div>
-                        <div class="description">
-                                Flowing Particles: A neat visualiser of randomly flowing colourful particles.                                
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image"><a href="orbitParticles/index.html">
-                        <img src="orbitParticles/demo.gif" alt="test" style="height:50%;"></a></div>
-                        <div class="description">
-                                Orbit Particles: A neat visualiser of gravity-like controlled flowing colourful particles.                                
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image"><a href="sineParticlesFireworks/index.html">
-                        <img src="sineParticlesFireworks/demo.gif" alt="test" style="height:50%;"></a></div>
-                        <div class="description">
-                                Fireworks: A neat visualiser particles which shoot fireworks onclick.                                
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image"><a href="EggInc/index.html">
-                        <img src="EggInc/demo.gif" alt="test" style="height:50%;"></a></div>
-                        <div class="description">
-                                Egg Inc: A copycat of the app Egg Inc.                                
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image"><a href="spaceSim/index.html">
-                        <img src="spaceSim/spaceSimGame0.png" alt="test" style="height:50%;"></a></div>
-                        <div class="description">
-                        
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image"><a href="/index.html">
-                        <img src="/demo.gif" alt="test" style="height:50%;"></a></div>
-                        <div class="description">
-                        
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image"><a href="/index.html">
-                        <img src="/demo.gif" alt="test" style="height:50%;"></a></div>
-                        <div class="description">
-                        
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="image"><a href="/index.html">
-                        <img src="/demo.gif" alt="test" style="height:50%;"></a></div>
-                        <div class="description">
-                        
-                        </div>
-                    </div>-->
-                </div>
+                <div class="grid" id="grid"></div>
             </div>
         </div>
         
         <div class="footer">
-        <p>Josh Ten JS, 2017</p>
+            <p>Josh Ten JS, 2017</p>
         </div>
     </body>
 </html>
