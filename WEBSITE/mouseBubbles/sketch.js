@@ -1,18 +1,19 @@
 var bubbles = [];
-var spacing = 150;
+var spacing = 130;
 var points = [];
 var mouseReleased;
+var bubbleSprite
 
 function setup() {
 	createCanvas(window.innerWidth-8, window.innerHeight-8);
 	colorMode(HSB);
 	mouseReleased = true;
+	bubbleSprite = loadImage("bubble.png");	
 	for (var i = 0; i < width / spacing; i++) {
 		for (var j = 0; j < height / spacing; j++) {
 			bubbles.push(new Bubble(spacing*i, spacing*j));
 		}
 	}
-	// bubbles.push(new Bubble(width/2, height/2));
 }
 
 function draw() {
@@ -30,4 +31,9 @@ function draw() {
 
 function getMouse() {
 	return createVector(mouseX, mouseY);
+}
+
+function mod(val) {
+	if (val < 0) return -val;
+	return val;
 }

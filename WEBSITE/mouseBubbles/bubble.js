@@ -1,29 +1,28 @@
 class Bubble {
     constructor(x, y) {
         this.pos = createVector(x, y);
+        this.vel = createVector(0, 0);
+        this.acc = createVector(0, 0);
         this.minSize = 100;
         this.maxSize = 200;
+        this.maxAcc = 0.7;
         this.size = this.minSize;
         this.goalSize = this.size;
-        this.vel = 0;
-        this.acc = 0;
+        this.sizeVel = 0;
+        this.sizeAcc = 0;
         this.hue = 0;
     }
 
     update() {
-        //this.bulge();
-        if (this.goalSize < this.minSize) this.goalSize = this.minSize;
-        if (this.goalSize > this.maxSize) this.goalSize = this.maxSize;
-        if (this.size < this.goalSize) this.acc++;
-        if (this.size > this.goalSize) this.acc--;
-        this.vel += this.acc;
-        this.size += this.vel;
-        this.acc = 0;
-        this.vel *= 0.95;
-        if (this.vel < 0.9 && this.vel > -0.9) this.vel = 0;
+        this.bulge();
+        this.posPhys();
+        var waveBulge = this.wave();
 
-        this.mouseAttract();
-        this.collisions();
+        if (this.collisions(waveBulge)) {
+            this.sizePhys(0.5);
+            this.mouseAttract();
+        } else this.sizePhys(1);
+        this.hitTheWall();
 
         this.draw();
     }
@@ -31,40 +30,80 @@ class Bubble {
     draw() {
         noFill();
         stroke(this.hue, 255, 255);
+        strokeWeight(2);
+        image(bubbleSprite, this.pos.x-this.size/2, this.pos.y-this.size/2, this.size, this.size);
         ellipse(this.pos.x, this.pos.y, this.size, this.size);
+    }
+
+    sizePhys(retarding) {
+        var bulgeSpeed = 2 * retarding;
+        this.goalSize *= 0.9;
+        if (this.goalSize < this.minSize) this.goalSize = this.minSize;
+        if (this.goalSize > this.maxSize) this.goalSize = this.maxSize;
+        if (this.size < this.goalSize) this.sizeAcc += bulgeSpeed;
+        if (this.size > this.goalSize) this.sizeAcc -= bulgeSpeed;
+        this.sizeVel += this.sizeAcc;
+        this.size += this.sizeVel;
+        this.sizeAcc = 0;
+        this.sizeVel *= 0.95;   
+    }
+
+    posPhys() {
+        this.acc.limit(this.maxAcc); 
+        this.pos.add(this.vel);
+        this.vel.add(this.acc);
+        this.acc.mult(0);
+        this.vel.mult(0.97);
     }
 
     bulge() {
         var distance = getMouse().sub(this.pos).mag();
-        for (var i = 0; i < points.length; i++) {
-            var d = points[i].copy().sub(this.pos).mag();
-            if (d < distance) distance = d;
-        }
-        var change = 10/distance;
-        this.goalSize = map(change, 0, 1, -10, 2000);
-        this.hue = map(change, 0, 1, 0, 255);
+        this.goalSize = -distance * 0.4 + 200;
+        this.hue = map(this.size, -this.goalSize, this.goalSize, 0, 200);
+    }
+
+    wave() {
+        var bulgeDiff = mod(this.goalSize - this.size);
+        return bulgeDiff;
     }
 
     mouseAttract() {
+        var attractionToMouse = 0.3;
         var difference = getMouse().copy().sub(this.pos).normalize();
-        this.pos.add(difference);
+        this.acc.add(difference.mult(attractionToMouse));
     }
 
-    collisions() {
+    collisions(waveBulge) {
+        var hit = false;
         for (var i = 0; i < bubbles.length; i++) {
             var difference = this.pos.copy().sub(bubbles[i].pos);
             var distance = difference.mag();
-            var distA = getMouse().sub(this.pos).mag();
-            var distB = getMouse().sub(bubbles[i].pos).mag();
-            if (distance < (this.size/2) + (bubbles[i].size/2) &&
-                this.size >= bubbles[i].size &&
-                distA < distB) {
-                bubbles[i].pos.add(difference.normalize().mult(-1));
+            var minDist = (this.size/2) + (bubbles[i].size/2);
+            var overlap = minDist - distance;
+            if (overlap > 0) {
+                bubbles[i].pos.add(difference.normalize().mult(-overlap * 0.5));
+                var mass = map(this.size, this.minSize, this.maxSize, 0.3, 0.7);
+                bubbles[i].acc.add(difference.normalize());
+                bubbles[i].goalSize += waveBulge;
+                hit = true;
             }
         }
-        // if (this.pos.x < 0) this.pos.x = 0;
-        // if (this.pos.x > width) this.pos.x = width;
-        // if (this.pos.y < 0) this.pos.y = 0;
-        // if (this.pos.y > height) this.pos.y = height;
+        return hit;
+    }
+    
+    hitTheWall() {
+        var wallForce = 0.2;
+        if (this.pos.x < 0) {
+            this.acc.x += wallForce;
+        }
+        if (this.pos.x > width) {
+            this.acc.x -= wallForce;
+        }
+        if (this.pos.y < 0) {
+            this.acc.y += wallForce;
+        }
+        if (this.pos.y > height) {
+            this.acc.y -= wallForce;
+        }
     }
 }
