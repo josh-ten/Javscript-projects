@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='website/stylesheet.css' type='text/css' />
+        <link rel='stylesheet' href='website/topnav.css' type='text/css' />        
+        <link rel='stylesheet' href='website/content.css' type='text/css' />        
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        <script src="website/p5.min.js"></script>
+        <script 
+            src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="website/pageController.js"></script>
+        <script type="text/javascript" src="website/generateBoxes.js"></script>
+        
+        <title>Josh Ten JS</title>    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>      
+        <div class="topnav">
+            <div class="nav-item"><div class="text"><a href="#">Home</a></div></div>
+            <div class="nav-item"><div class="text"><a href="#">Music</a></div></div>
+            <div class="nav-item"><div class="text"><a href="#">Contact</a></div></div>
+        </div>
+
+        <div class="content">
+            <div id="site-title">
+                <div class="text" onclick="transitionPage(this);"><h1>Josh Ten JS</h1></div>
+            </div>
+            <div id="display">
+                <div class="grid" id="grid"></div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Josh Ten JS, 
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script>
+            </p>
+        </div>
+    </body>
+</html>
