@@ -19,10 +19,11 @@ function draw() {
 		snowflakes[i].update();
 	}
 	for (var i = snowflakes.length - 1; i >= 0; i--) {
-		if (snowflakes[i].y > height + 10) snowflakes.splice(i, 1);
+		if (snowflakes[i].pos.y > height + 10) snowflakes.splice(i, 1);
+		else if (snowflakes[i].alpha <= 0) snowflakes.splice(i, 1);
 	}
 
-	if (random() < 0.6) spawnSnowflake();
+	if (random() < 0.6) spawnSnowflake(); 
 }
 
 function spawnSnowflake() {

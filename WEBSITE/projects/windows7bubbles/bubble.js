@@ -11,7 +11,7 @@ class Bubble {
     }
 
     update() {
-        this.vel.mult(0.98);
+        this.vel.mult(0.999);
         this.pos.add(this.vel);
         this.vel.add(this.acc);
         this.acc.mult(0);

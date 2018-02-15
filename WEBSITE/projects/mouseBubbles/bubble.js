@@ -59,7 +59,7 @@ class Bubble {
     bulge() {
         var distance = getMouse().sub(this.pos).mag();
         this.goalSize = -distance * 0.4 + 200;
-        this.hue = map(this.size, -this.goalSize, this.goalSize, 0, 200);
+        this.hue = map(this.size-this.goalSize, -this.goalSize, this.goalSize, 0, 200);
     }
 
     wave() {
