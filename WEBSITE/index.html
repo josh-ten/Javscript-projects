@@ -5,7 +5,10 @@
         <link rel='stylesheet' href='website/topnav.css' type='text/css' />        
         <link rel='stylesheet' href='website/content.css' type='text/css' />        
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-        <script src="website/p5.min.js"></script>
+        <script src="projects/p5.min.js"></script>
+        <script src="projects/addons/p5.dom.min.js"></script>
+        <script src="website/backgroundBubbles/sketch.js"></script>
+        <script src="website/backgroundBubbles/bubble.js"></script>
         <script type="text/javascript" src="website/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="website/pageController.js"></script>
         <script type="text/javascript" src="website/generateBoxes.js"></script>
@@ -15,14 +18,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     
-    <body>      
+    <body>
         <div class="topnav">
             <div class="nav-item"><div class="text"><a href="#">Home</a></div></div>
             <div class="nav-item"><div class="text"><a href="#">Music</a></div></div>
             <div class="nav-item"><div class="text"><a href="#">Contact</a></div></div>
         </div>
 
+        <div id="canvasContainer"></div>
         <div class="content">
+
             <div id="site-title">
                 <div class="text" onclick="transitionPage(this);"><h1>Josh Ten JS</h1></div>
             </div>

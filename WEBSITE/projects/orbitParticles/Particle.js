@@ -3,8 +3,8 @@ function Particle(x, y) {
     this.vel = createVector(0, 0);
     this.acc = createVector(0, 0);
 
-    this.maxspeed = 10;
-    this.timeout = 100;
+    this.maxspeed = 20;
+    this.timeout = 300;
     this.time = this.timeout;
 
     Particle.prototype.update = function() {

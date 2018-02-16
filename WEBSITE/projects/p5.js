@@ -49629,6 +49629,7 @@ p5.prototype.createCanvas = function(w, h, renderer) {
   return this._renderer;
 };
 
+
 /**
  * Resizes the canvas to given width and height. The canvas will be cleared
  * and draw will be called immediately, allowing the sketch to re-render itself
