@@ -1,0 +1,8 @@
+:root {
+    --primary-background: #ddd;
+    --secondary-background: #333;
+    --primary-colour: rgb(72, 77, 109);
+    --primary-text: rgb(51, 51, 51);
+    --secondary-text: rgb(75, 143, 140);
+    --note: rgb(197, 151, 157);
+}

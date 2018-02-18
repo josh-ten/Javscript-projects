@@ -30,6 +30,8 @@ function generateBox(name, url, imageUrl, strDescription) {
                     //img
                     var img = document.createElement("img");
                     img.setAttribute("src", imageUrl);
+                    img.classList.add("freezeframe");
+                    img.classList.add("freezeframe-responsive");
 
                 //overlay
                 var overlay = document.createElement("div");

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- <link rel='stylesheet' href='website/packages/freezeframe_styles.css' type='text/css' /> -->
+        <link rel='stylesheet' href='website/colourScheme.css' type='text/css' />
         <link rel='stylesheet' href='website/stylesheet.css' type='text/css' />
         <link rel='stylesheet' href='website/topnav.css' type='text/css' />        
         <link rel='stylesheet' href='website/content.css' type='text/css' />        
@@ -9,8 +11,10 @@
         <script src="projects/addons/p5.dom.min.js"></script>
         <script src="website/backgroundBubbles/sketch.js"></script>
         <script src="website/backgroundBubbles/bubble.js"></script>
-        <script type="text/javascript" src="website/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="website/pageController.js"></script>
+        <script type="text/javascript" src="website/packages/jquery-3.3.1.min.js"></script>
+        <!-- <script type="text/javascript" src="website/packages/freezeframe.js"></script> -->
+        <script type="text/javascript" src="website/packages/imagesloaded.pkgd.js"></script>
+        <script type="text/javascript" src="website/controllers.js"></script>
         <script type="text/javascript" src="website/generateBoxes.js"></script>
         
         <title>Josh Ten JS</title>    
@@ -20,16 +24,15 @@
     
     <body>
         <div class="topnav">
-            <div class="nav-item"><div class="text"><a href="#">Home</a></div></div>
-            <div class="nav-item"><div class="text"><a href="#">Music</a></div></div>
-            <div class="nav-item"><div class="text"><a href="#">Contact</a></div></div>
+            <a href="#"><div class="nav-item"><div class="text">Home</div></div></a>
+            <a href="#"><div class="nav-item"><div class="text">Music</div></div></a>
+            <a href="#"><div class="nav-item"><div class="text">Contact</div></div></a>
         </div>
 
         <div id="canvasContainer"></div>
         <div class="content">
-
             <div id="site-title">
-                <div class="text" onclick="transitionPage(this);"><h1>Josh Ten JS</h1></div>
+                <div class="text" onclick="spawnBubble();"><h1>Josh Ten JS</h1></div>
             </div>
             <div id="display">
                 <div class="grid" id="grid"></div>

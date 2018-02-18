@@ -1,7 +1,7 @@
 /* Style the topnav links */
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--secondary-background);
     position: fixed;
     top: 0px;
     z-index: 2;
@@ -9,8 +9,8 @@
 }
 .topnav .nav-item {
     float: left;
-    border: #333 5px solid;
-    background-color: #333;
+    border: var(--secondary-background) 5px solid;
+    background-color: var(--secondary-background);
     width: 100px;
     position: relative;
     height: 60px;
@@ -20,20 +20,18 @@
 }
 .nav-item:hover {
     height: 100px;
-    background-color: #f2f2f2;
+    background-color: var(--primary-background);
 }
 .nav-item .text {
     bottom: 10px;
     position: absolute;
     width: 100%;
-}
-.nav-item .text a {
-    color: #f2f2f2;
+    color: var(--primary-background);
     text-decoration: none;
     transition: color .3s ease-in-out;
     text-align: center;
     display: block;
 }
-.nav-item:hover .text a {
+.nav-item:hover .text {
     color: #333;
 }
