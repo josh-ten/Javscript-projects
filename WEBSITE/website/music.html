@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Josh Ten JS - MUSIC</title>    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link id="scripts" />        
+        <script type="text/javascript" src="packages/jquery-3.3.1.min.js"></script>
+        <script>
+            $(() => {
+                $("#scripts").load("scripts.html");
+                $("#topnav").load("topnav.html");
+                $("#footer").load("footer.html");
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div class="topnav" id="topnav"></div>
+        
+        <div class="content">
+            <div id="site-title">
+                <div class="text" onclick="spawnBubble();"><h1>Josh Ten Music</h1></div>
+            </div>
+            <p>This is where I'll be putting my music links</p>
+        </div>
+
+        <div class="footer" id="footer"></div>
+    </body>
+</html>

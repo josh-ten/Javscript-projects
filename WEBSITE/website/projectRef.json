@@ -1,24 +1,46 @@
 [
     { 
         "title": "Windows 7 Bubbles",
-        "url": "windows7bubbles/index.html",
+        "id": "0000",
+        "url": "windows7bubbles",
         "imageUrl": "windows7bubbles/demo.png",
-        "description": "The bubbles from that windows 7 screensaver but cooler"
-    },   
+        "description": "The bubbles from that windows 7 screensaver but cooler",
+        "files" : [
+            "sketch.js",
+            "bubble.js"
+        ]
+    },
+    { 
+        "title": "Box City",
+        "id": "0015",
+        "url": "boxCity/index.html",
+        "imageUrl": "",
+        "description": "Boxes throwing waves over the screen!"
+    },
+    { 
+        "title": "CamerABoi",
+        "id": "0016",
+        "url": "cameraLines/index.html",
+        "imageUrl": "",
+        "description": "Recreates your camera feed using shapes and lines"
+    },
     { 
         "title": "Space Sim",
+        "id": "0001",        
         "url": "spaceSim/index.html",
         "imageUrl": "spaceSim/spaceSimGame0.png",
         "description": "Space Sim: Tiny astronauts float around space and grapple to each other"
     },
     { 
         "title": "Mouse Bubbles",
+        "id": "0002",        
         "url": "mouseBubbles/index.html",
         "imageUrl": "mouseBubbles/demo.png",
         "description": "Really satisfying bubble swarming physics engine"
     },
     { 
         "title": "Fear",
+        "id": "0003",        
         "url": "Fear-JoshTen-LudumDare40/index.html",
         "imageUrl": "Fear-JoshTen-LudumDare40/demo.png",
         "description": "(Ludum Dare Entry) Fear: Avoid your fears but they'll still get worse.",
@@ -26,36 +48,42 @@
     },
     { 
         "title": "Gravity Lines",
+        "id": "0004",        
         "url": "gravityLines/index.html",
         "imageUrl": "gravityLines/demo.png",
         "description": "Gravity Lines: Gravity physics simulator"
     },
     { 
         "title": "Gravity Lines 2",
+        "id": "0005",        
         "url": "gravityLinesv2/index.html",
         "imageUrl": "gravityLinesv2/demo.png",
         "description": "Gravity Lines 2: Colourful instantaneous gravity physics simulator (Kinda trippy)"
     },
     { 
         "title": "Sprout",
+        "id": "0006",        
         "url": "Sproutv2/index.html",
         "imageUrl": "Sproutv2/demo1.gif",
         "description": "Sprout: Fly upwards through destructable terrain at increasing speeds."
     },
     { 
         "title": "Connecting Vertices",
+        "id": "0007",        
         "url": "connectingVertices/index.html",
         "imageUrl": "connectingVertices/demo.gif",
         "description": "A cool little psychadelic geometry thing"
     },
     { 
         "title": "Connecting Vertices 2",
+        "id": "0008",        
         "url": "connectingVertices2/index.html",
         "imageUrl": "connectingVertices2/demo.gif",
         "description": "Flat travelling paths"
     },
     { 
         "title": "Sine Particles",
+        "id": "0009",        
         "url": "sineParticles/index.html",
         "imageUrl": "sineParticles/demo.png",
         "description": "Sine Particles: Control the speed and depth of some particles following a sine wave!",
@@ -63,30 +91,35 @@
     },
     { 
         "title": "Fractal Tree",
+        "id": "0010",        
         "url": "fractalTree/index.html",
         "imageUrl": "fractalTree/demo.gif",
         "description": "Psychadelic fractal tree :O"
     },
     { 
         "title": "Flowing Particles",
+        "id": "0011",        
         "url": "flowingParticles/index.html",
         "imageUrl": "flowingParticles/demo.png",
         "description": "Flowing Particles: A neat visualiser of randomly flowing colourful particles."
     },
     { 
         "title": "Orbit Particles",
+        "id": "0012",        
         "url": "orbitParticles/index.html",
         "imageUrl": "orbitParticles/demo.png",
         "description": "Orbit Particles: A neat visualiser of gravity-like controlled flowing colourful particles."
     },
     { 
         "title": "Fireworks",
+        "id": "0013",        
         "url": "sineParticlesFireworks/index.html",
         "imageUrl": "sineParticlesFireworks/demo.gif",
         "description": "Fireworks: A neat visualiser particles which shoot fireworks onclick."
     },
     { 
         "title": "Egg Inc",
+        "id": "0014",        
         "url": "EggInc/index.html",
         "imageUrl": "EggInc/demo.png",
         "description": "Egg Inc: A copycat of the app Egg Inc.",

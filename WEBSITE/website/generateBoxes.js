@@ -1,23 +1,24 @@
-jQuery.getJSON('website/projectRef.json', (data)=>{ loadBoxes(data); });
+$.getJSON('projectRef.json', (data)=>{ loadBoxes(data); });
 
 function loadBoxes(data) {
     for (var i = 0; i < data.length; i++) {
         if (data[i].url != "" && !data[i].exclude)
             generateBox(data[i].title, 
-                        'projects/' + data[i].url, 
+                        data[i].id, 
+                        data[i].url,
                         'projects/' + data[i].imageUrl, 
                         data[i].description);
     }
 }
 
-function generateBox(name, url, imageUrl, strDescription) {
+function generateBox(name, id, url, imageUrl, strDescription) {
     var container = document.getElementById("grid");
     //Item
     var item = document.createElement("div");    
     item.setAttribute("class", "item");
         //a href
         var link = document.createElement("a");
-        link.setAttribute("href", url);
+        link.setAttribute("href", "projectContainer.html?id=" + id);       
 
             //imageContainer
             var imageContainer = document.createElement("div");
@@ -29,7 +30,7 @@ function generateBox(name, url, imageUrl, strDescription) {
 
                     //img
                     var img = document.createElement("img");
-                    img.setAttribute("src", imageUrl);
+                    img.setAttribute("src", "../" + imageUrl);
                     img.classList.add("freezeframe");
                     img.classList.add("freezeframe-responsive");
 

@@ -16,6 +16,10 @@
     position: relative;
 }
 
+.item a {
+    cursor: pointer;
+}
+
 .imageContainer {
     position: relative;
     overflow: hidden;
