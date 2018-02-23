@@ -6,13 +6,12 @@ function dataLoaded(data) {
     var projID = getUrlParam("id");
     var project = findProjectWithId(projID, data);
     if (project) {
-        var projectCont = document.getElementById("project");
-        // $("#project").load("../topnav.html");
-        // console.log("../projects/" + project.url);
-        // $("#project").load("projects/" + project.url, ()=>{alert("success")});
+        var projectCont = document.getElementById("projectScripts");
+        // console.log(project.url);
+        // $("#project").load("./projects/" + project.url);
         for (var i = 0; i < project.files.length; i++) {
             var script = document.createElement("script");
-            script.setAttribute("src", "projects/" + project.url + '/' + project.files[i]);
+            script.setAttribute("src", "./projects/" + project.url + '/' + project.files[i]);
             projectCont.appendChild(script);
         }
     }
