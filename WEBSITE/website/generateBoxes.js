@@ -18,7 +18,7 @@ function generateBox(name, id, url, imageUrl, strDescription) {
     item.setAttribute("class", "item");
         //a href
         var link = document.createElement("a");
-        link.setAttribute("href", "projectContainer.html?id=" + id);       
+        link.setAttribute("href", "../projects/" + url);
 
             //imageContainer
             var imageContainer = document.createElement("div");

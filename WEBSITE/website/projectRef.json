@@ -2,7 +2,7 @@
     { 
         "title": "Windows 7 Bubbles",
         "id": "0000",
-        "url": "windows7bubbles",
+        "url": "windows7bubbles/index.html",
         "imageUrl": "windows7bubbles/demo.png",
         "description": "The bubbles from that windows 7 screensaver but cooler",
         "files" : [

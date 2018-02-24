@@ -37,19 +37,19 @@ class Bubble {
 
     constrain() {
         if (this.pos.x <= this.size/2) {
-            this.vel.x *= -1.2;
+            this.vel.x *= -1;
             this.pos.x = this.size/2;
         }
         if (this.pos.x >= width-this.size/2) {
-            this.vel.x *= -1.2;
+            this.vel.x *= -1;
             this.pos.x = width-this.size/2;
         }
         if (this.pos.y <= this.size/2) {
-            this.vel.y *= -1.2;
+            this.vel.y *= -1;
             this.pos.y = this.size/2;            
         }
         if (this.pos.y >= height-this.size/2) {
-            this.vel.y *= -1.2;
+            this.vel.y *= -1;
             this.pos.y = height-this.size/2;            
         }
     }
