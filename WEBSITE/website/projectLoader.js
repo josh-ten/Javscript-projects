@@ -11,7 +11,7 @@ function dataLoaded(data) {
         // $("#project").load("./projects/" + project.url);
         for (var i = 0; i < project.files.length; i++) {
             var script = document.createElement("script");
-            script.setAttribute("src", "./projects/" + project.url + '/' + project.files[i]);
+            script.setAttribute("src", "../projects/" + project.url + '/' + project.files[i]);
             projectCont.appendChild(script);
         }
     }
