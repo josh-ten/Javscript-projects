@@ -4,25 +4,14 @@
         "id": "0000",
         "url": "windows7bubbles/index.html",
         "imageUrl": "windows7bubbles/demo.png",
-        "description": "The bubbles from that windows 7 screensaver but cooler",
-        "files" : [
-            "sketch.js",
-            "bubble.js"
-        ]
+        "description": "The bubbles from that windows 7 screensaver but cooler"
     },
     { 
         "title": "Box City",
         "id": "0015",
         "url": "boxCity/index.html",
-        "imageUrl": "",
+        "imageUrl": "boxCity/demo.png",
         "description": "Boxes throwing waves over the screen!"
-    },
-    { 
-        "title": "CamerABoi",
-        "id": "0016",
-        "url": "cameraLines/index.html",
-        "imageUrl": "",
-        "description": "Recreates your camera feed using shapes and lines"
     },
     { 
         "title": "Space Sim",
@@ -66,6 +55,13 @@
         "url": "Sproutv2/index.html",
         "imageUrl": "Sproutv2/demo1.gif",
         "description": "Sprout: Fly upwards through destructable terrain at increasing speeds."
+    },
+    { 
+        "title": "CamerABoi",
+        "id": "0016",
+        "url": "cameraLines/index.html",
+        "imageUrl": "",
+        "description": "Recreates your camera feed using shapes and lines"
     },
     { 
         "title": "Connecting Vertices",
