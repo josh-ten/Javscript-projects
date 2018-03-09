@@ -1,5 +1,4 @@
 var bubbles = [];
-var ship;
 var xoff;
 var averageHue = 0;
 const LEFTKEY = 37, UPKEY = 38, RIGHTKEY = 39, DOWNKEY = 40;
@@ -10,8 +9,6 @@ function setup() {
 	for (var i = 0; i < 10; i++) {
 		bubbles.push(new Bubble(random(width), random(height), random(-10, 10), random(-10, 10)));
 	}
-	ship = new Ship(width/2, height/2);
-
 	xoff = 0;
 }
 
@@ -24,7 +21,6 @@ function draw() {
 		bubbles[i].update();
 		total += bubbles[i].hue;
 	}
-	//ship.update();
 	averageHue = total / bubbles.length;
 	xoff += 0.01;
 }

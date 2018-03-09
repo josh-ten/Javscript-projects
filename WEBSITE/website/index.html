@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Josh Ten JS - HOME</title>    
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link id="scripts" />
+        <script type="text/javascript" src="packages/jquery-3.3.1.min.js"></script>
+        <script src="backgroundBubbles/sketch.js"></script>
+        <script src="backgroundBubbles/bubble.js"></script>
+        <script type="text/javascript" src="generateBoxes.js"></script>
+        <script>
+            $(() => {
+                $("#scripts").load("scripts.html");
+                $("#topnav").load("topnav.html");
+                $("#footer").load("footer.html");
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div class="topnav" id="topnav"></div>
+
+        <div id="canvasContainer"></div>
+        <div class="content">
+            <div id="site-title">
+                <div class="text" onclick="spawnBubble();"><h1>Josh Ten JS</h1></div>
+            </div>
+            <div id="display">
+                <div class="grid" id="grid"></div>
+            </div>
+        </div>
+        
+        <div class="footer" id="footer"></div>
+
+    </body>
+</html>

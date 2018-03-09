@@ -8,8 +8,19 @@
     <script src="../addons/p5.sound.min.js"></script>
     <script src="sketch.js"></script>
     <script src="bubble.js"></script>
-    <script src="ship.js"></script>    
+    <script src="../../website/packages/jquery-3.3.1.min.js"></script>    
+    <link rel="import" id="scripts" />
+    <script>
+      $(() => {
+          $("#scripts").load("scripts.html");
+          $("#topnav").load("../../website/topnav.html");
+          $("#footer").load("../../website/footer.html");
+      });
+  </script>
   </head>
   <body>
+      <div class="topnav" id="topnav"></div>
+
+      <div class="footer" id="footer"></div>
   </body>
 </html>

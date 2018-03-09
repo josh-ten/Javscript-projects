@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Josh Ten JS - HOME</title>    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="../website/packages/jquery-3.3.1.min.js"></script>
+        <link rel="import" id="scripts"></link>  
+        <link rel="import" id="projectScripts"></link>
+
+        <script>
+            $(() => {
+                $("#scripts").load("scripts.html");
+                $("#topnav").load("topnav.html");
+                $("#footer").load("footer.html");
+                // $("#project").load("../projects/mouseBubbles/index.html");
+            });
+        </script>
+        <script src="projectLoader.js"></script>
+    </head>
+    
+    <body>
+        <div class="topnav" id="topnav"></div>
+        
+        <!-- <div id="project"></div> -->
+        
+        <div class="footer" id="footer"></div>
+        
+    </body>
+</html>
