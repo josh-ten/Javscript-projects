@@ -14,6 +14,8 @@
     background-color: var(--primary-background);
     border: 3px solid var(--secondary-background);
     position: relative;
+    box-shadow: var(--primary-colour) 0 0 10px;
+
 }
 
 .item a {
