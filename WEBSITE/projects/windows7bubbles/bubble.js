@@ -4,7 +4,7 @@ class Bubble {
         this.pos = createVector(x, y);
         this.vel = createVector(xvel, yvel);
         this.acc = createVector(0, 0);
-        this.size = random(60,180);
+        this.size = random(60, 250);
         this.hue = random(255);
         this.hueNoise = random(1000);
         this.img = loadImage("bubble.png");
@@ -27,6 +27,7 @@ class Bubble {
     }
 
     draw() {
+
         image(this.img, this.pos.x-this.size/2, this.pos.y-this.size/2, this.size, this.size);
         stroke(this.hue, 200, 255);
         strokeWeight(2);
@@ -37,19 +38,19 @@ class Bubble {
 
     constrain() {
         if (this.pos.x <= this.size/2) {
-            this.vel.x *= -1.2;
+            this.vel.x *= -0.99;
             this.pos.x = this.size/2;
         }
         if (this.pos.x >= width-this.size/2) {
-            this.vel.x *= -1.2;
+            this.vel.x *= -0.99;
             this.pos.x = width-this.size/2;
         }
         if (this.pos.y <= this.size/2) {
-            this.vel.y *= -1.2;
+            this.vel.y *= -0.99;
             this.pos.y = this.size/2;            
         }
         if (this.pos.y >= height-this.size/2) {
-            this.vel.y *= -1.2;
+            this.vel.y *= -0.99;
             this.pos.y = height-this.size/2;            
         }
     }
