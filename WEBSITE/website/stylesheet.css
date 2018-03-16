@@ -11,7 +11,8 @@ h1 {
     margin-left: 40px;
     margin-top: 20px;
     margin-bottom: 20px; 
-    font-size: 70px;
+    font-size: 60px;
+    /* color: #333; */
     color: var(--primary-text);
     letter-spacing: 10px;
     word-spacing: 30px;
@@ -36,7 +37,6 @@ body {
 
 .content {
     background-color: var(--primary-background);
-    background: radial-gradient(circle, rgb(243, 243, 243), rgb(172, 172, 172));
     padding: 10px;
     margin-top: 50px;
     width: 100%;

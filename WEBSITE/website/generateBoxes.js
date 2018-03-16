@@ -1,24 +1,23 @@
-$.getJSON('website/projectRef.json', (data)=>{ loadBoxes(data); });
+jQuery.getJSON('website/projectRef.json', (data)=>{ loadBoxes(data); });
 
 function loadBoxes(data) {
     for (var i = 0; i < data.length; i++) {
         if (data[i].url != "" && !data[i].exclude)
             generateBox(data[i].title, 
-                        data[i].id, 
-                        data[i].url,
+                        'projects/' + data[i].url, 
                         'projects/' + data[i].imageUrl, 
                         data[i].description);
     }
 }
 
-function generateBox(name, id, url, imageUrl, strDescription) {
+function generateBox(name, url, imageUrl, strDescription) {
     var container = document.getElementById("grid");
     //Item
     var item = document.createElement("div");    
     item.setAttribute("class", "item");
         //a href
         var link = document.createElement("a");
-        link.setAttribute("href", "projects/" + url);
+        link.setAttribute("href", url);
 
             //imageContainer
             var imageContainer = document.createElement("div");

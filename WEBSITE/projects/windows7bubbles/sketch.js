@@ -16,8 +16,7 @@ function setup() {
 }
 
 function draw() {
-	background(averageHue, 50, 3);
-	// background(0);
+	background(averageHue, 80, 10);
 	var windForce = wind();
 	var total = 0;
 	for (var i = 0; i < bubbles.length; i++) {
@@ -50,6 +49,6 @@ function mousePressed() {
 
 function keyPressed() {
 	if (keyIsDown(32)) {
-		bubbles.push(new Bubble(random(width), -300, random(-10, 10), random(-10, 10)));		
+		bubbles.push(new Bubble(random(width), random(height), random(-10, 10), random(-10, 10)));		
 	}
 }

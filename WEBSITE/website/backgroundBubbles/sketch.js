@@ -39,5 +39,5 @@ function mousePressed() {
 
 function spawnBubble() {
 	if (bubbles.length < maxBubbleCount)
-		bubbles.push(new Bubble(Math.random(width), -10));
+		bubbles.push(new Bubble(random(width), -10));
 }
