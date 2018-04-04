@@ -5,6 +5,12 @@
         "imageUrl": "windows7bubbles/demo.png",
         "description": "The bubbles from that windows 7 screensaver but cooler"
     },   
+	{ 
+        "title": "Alpha Patterns",
+        "url": "alphaPatterns/index.html",
+        "imageUrl": "",
+        "description": "Almost like the matrix but circles"
+    },  
     { 
         "title": "Space Sim",
         "url": "spaceSim/index.html",

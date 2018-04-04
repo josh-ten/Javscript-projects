@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Josh Ten JS - MUSIC</title>    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link id="scripts" />        
+        <script src="website/packages/jquery-3.3.1.min.js"></script>
+        <script>
+            $(() => {
+                $("#scripts").load("website/scripts.html");
+                $("#topnav").load("website/topnav.html");
+                $("#footer").load("website/footer.html");
+            });
+        </script>
+<script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'g7ExS5gbVKcR1N135Id'});Pixlee.addSimpleWidget({widgetId:'2392'});};</script>
+<script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>    </head>
+    
+    <body>
+        <div class="topnav" id="topnav"></div>
+        
+        <div class="content">
+            <div id="site-title">
+                <div class="text" onclick="spawnBubble();"><h1>Josh Ten Music</h1></div>
+            </div>
+            <div id="pixlee_container"></div>            
+            <p>This is where I'll be putting my music links</p>
+        </div>
+
+        <div class="footer" id="footer"></div>
+    </body>
+</html>

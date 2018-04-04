@@ -6,6 +6,7 @@ class Tower {
         this.direction = createVector(1, 0);
         this.size = 50;
         this.bullets = [];
+        this.selected = true;
     }
 
     update() {
@@ -16,22 +17,15 @@ class Tower {
         for (var i = 0; i < this.bullets.length; i++) {
             this.bullets[i].update();
         }
+        //Grey halo when selected
+        if (this.selected) {
+            strokeWeight(1);
+            stroke(0);
+            fill(0, 50);
+            ellipse(this.pos.x, this.pos.y, this.range, this.range);
+        }
         this.draw();
         this.removeBullets();
-    }
-
-    draw() {
-        push();
-        translate(this.pos.x, this.pos.y);
-        rotate(this.rotation);
-        strokeWeight(5);
-        stroke(200);
-        line(0, -this.size/2, 0, -this.size);
-        fill(0, 100, 100);
-        rectMode(CENTER);
-        strokeWeight(3);
-        rect(0, 0, this.size, this.size);
-        pop();
     }
 
     fire(target) {
@@ -58,7 +52,7 @@ class Tower {
         var closestIndex = -1;
         for (var i = 1; i < enemies.length; i++) {
             var distance = enemies[i].pos.copy().sub(this.pos).mag();
-            if (distance < closest) {
+            if (distance < closest && distance < this.range) {
                 closest = distance;
                 closestIndex = i;
             }
