@@ -6,6 +6,12 @@
         "description": "The bubbles from that windows 7 screensaver but cooler"
     },   
 	{ 
+        "title": "Box City",
+        "url": "boxCity/index.html",
+        "imageUrl": "boxCity/demo.png",
+        "description": "Box is triggered"
+    },   
+	{ 
         "title": "Alpha Patterns",
         "url": "alphaPatterns/index.html",
         "imageUrl": "",

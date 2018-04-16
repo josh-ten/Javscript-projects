@@ -19,7 +19,7 @@ function draw() {
 	for (var i = 0; i < img.width; i++) {
 		var xoff = 0;
 	  	for (var j = 0; j < img.height; j++) {
-			var random = noise(xoff, yoff, zoff);
+			var random = noise(xoff, yoff, zoff); 
 			// var random = 0;
 			var k = int(random * colorScale.length-1);
 			var c = transition3(
@@ -60,7 +60,7 @@ function transition(value, minimum, maximum, start_point, end_point) {
 }
 // [0     12    20,   23,      30]
 
-function transition3(value, minimum, maximum, [s1, s2, s3], [e1, e2, e3]) {
+function transition3(value, minimum, maximum, s1, s2, s3, e1, e2, e3) {
 	r1 = transition(value, minimum, maximum, s1, e1);
 	r2 = transition(value, minimum, maximum, s2, e2);
 	r3 = transition(value, minimum, maximum, s3, e3);
