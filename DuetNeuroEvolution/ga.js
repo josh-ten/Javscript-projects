@@ -4,9 +4,9 @@ function nextGeneration() {
     restart();
     // Normalize the fitness values 0-1
     normalizeFitness(allDotPairs);
-    // Generate a new set of birds
+    // Generate a new set of dotPairs
     dotPairs = generate(allDotPairs);
-    // Copy those birds to another array
+    // Copy those dotPairs to another array
     allDotPairs = dotPairs.slice();
 }
 
@@ -17,7 +17,7 @@ function restart() {
     counter = 0;
 }
 
-// Normalize the fitness of all birds
+// Normalize the fitness of all dotPairs
 function normalizeFitness(dotPairs) {
     // Make score exponentially better?
     for (let i = 0; i < dotPairs.length; i++) {
@@ -35,18 +35,18 @@ function normalizeFitness(dotPairs) {
     }
 }
 
-// Generate a new population of birds
+// Generate a new population of dotPairs
 function generate(oldDotPairs) {
     let newDotPairs = [];
     for (let i = 0; i < oldDotPairs.length; i++) {
-        // Select a bird based on fitness
+        // Select a dotPairs based on fitness
         let dp = poolSelection(oldDotPairs);
         newDotPairs[i] = dp;
     }
     return newDotPairs;
 }
 
-// An algorithm for picking one bird from an array
+// An algorithm for picking one dotPairs from an array
 // based on fitness
 function poolSelection(dotPairs) {
     // Start at 0
