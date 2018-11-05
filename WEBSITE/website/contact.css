@@ -13,3 +13,28 @@ img {
   height: 100px;
   margin: 10px;
 }
+
+.email {
+  margin-top: 3em;
+}
+.socialItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 60%;
+  margin: auto;
+  height: 200px;
+}
+.socialItem {
+  position: relative;
+}
+.socialItem .text {
+  transition: all .3s;
+  overflow: hidden;
+  height: 1em;
+}
+.socialItem .image {
+
+}
+.socialItem:hover .image {
+  top: 30px;
+}
