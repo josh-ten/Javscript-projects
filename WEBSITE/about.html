@@ -3,17 +3,15 @@
     <head>
         <link rel='stylesheet' href='website/colourScheme.css' type='text/css' />
         <link rel='stylesheet' href='website/stylesheet.css' type='text/css' />
-        <link rel='stylesheet' href='website/topnav.css' type='text/css' />        
-        <link rel='stylesheet' href='website/content.css' type='text/css' />        
+        <link rel='stylesheet' href='website/topnav.css' type='text/css' />
+        <link rel='stylesheet' href='website/content.css' type='text/css' />
+        <link rel='stylesheet' href='website/contact.css' type='text/css' />
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-        
         <script src="projects/p5.min.js"></script>
         <script src="projects/addons/p5.dom.min.js"></script>
         <script src='website/backgroundCross/sketch.js'></script>
-        
         <script type="text/javascript" src="website/packages/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="website/packages/imagesloaded.pkgd.js"></script>
-        <script type="text/javascript" src="website/generateBoxes.js"></script>
         
         <title>Josh Ten JS</title>    
         <meta charset="utf-8">
@@ -23,19 +21,21 @@
     <body>
         <div class="topnav">
             <a href="./index.html"><div class="nav-item"><div class="text">Home</div></div></a>
-            <!-- <a href="./music.html"><div class="nav-item"><div class="text">Music</div></div></a> -->
-            <a href='./about.html'><div class='nav-item'><div class='text'>About</div></div></a>
+            <a href="./about.html"><div class="nav-item"><div class="text">About</div></div></a>
             <a href="./contact.html"><div class="nav-item"><div class="text">Contact</div></div></a>
         </div>
 
-        <div id="canvasContainer"></div>
-        <div class="content">
-            <div id="site-title">
-                <div class="text"><h1>Josh Ten JS</h1></div>
-            </div>
-            <div id="display">
-                <div class="grid" id="grid"></div>
-            </div>
+        <div id='contactDetails'>
+            <h1>Who am I?</h1>
+            <p>I've been asking myself that same question for a while now. haha</p>
+            <p>I'm undertaking a Bachelor of Software Engineering in Melbourne.</p>
+            <p>I've been programming for the past 
+                <script type='text/javascript'>
+                    document.write(new Date().getFullYear() - 2013);
+                </script>
+            years, while I've been focusing on JavaScript more recently. I was inspired 
+            by Daniel Shiffman's YouTube videos to get creative with the p5.js library,
+            which I've used to create all of the projects you can see on this portfolio.</p> 
         </div>
         
         <div class="footer">

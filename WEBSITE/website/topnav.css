@@ -13,14 +13,14 @@
     background-color: var(--secondary-background);
     width: 100px;
     position: relative;
-    height: 60px;
+    height: 50px;
     transition-property: background-color height;
     transition: .3s ease-in-out;
     cursor: pointer;
 }
 .nav-item:hover {
     height: 100px;
-    background-color: var(--primary-background);
+    background-color: var(--contrast);
 }
 .nav-item .text {
     bottom: 10px;
@@ -31,7 +31,4 @@
     transition: color .3s ease-in-out;
     text-align: center;
     display: block;
-}
-.nav-item:hover .text {
-    color: #333;
 }
