@@ -1,6 +1,6 @@
 var grid = [];
 var available = [];
-var spacing = 50;
+var spacing = 20;
 var travellers = [];
 var w, h;
 var finished;

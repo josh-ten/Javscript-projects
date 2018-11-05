@@ -3,7 +3,7 @@ class Traveller {
         this.pos = createVector(x, y);
         this.direction;
         this.terminated = false;
-        this.speed = random(0.01, 0.05);
+        this.speed = random(0.01, 5);
         this.currentPoint = grid[this.pos.x][this.pos.y];
         this.currentConnection;
         this.completedMove = true;

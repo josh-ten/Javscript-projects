@@ -1,6 +1,7 @@
 html {
     font-size: 20px;
-    font-family: 'Fjalla One', sans-serif;     
+    font-family: 'Fjalla One', sans-serif;
+    cursor: none; 
 }
 
 * {
@@ -12,7 +13,6 @@ h1 {
     margin-top: 20px;
     margin-bottom: 20px; 
     font-size: 60px;
-    /* color: #333; */
     color: var(--primary-text);
     letter-spacing: 10px;
     word-spacing: 30px;
@@ -26,8 +26,8 @@ h1 {
 #site-title .text {
     position: absolute;
     display: inline-block;
-    cursor: pointer;
     left: 0px;
+    /* mix-blend-mode: difference; */
 }
 
 body {

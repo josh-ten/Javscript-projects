@@ -1,0 +1,15 @@
+#contactDetails {
+  padding: 4em;
+  background-color: var(--primary-background);
+  text-align: center;
+}
+
+body {
+  cursor: auto;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
