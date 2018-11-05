@@ -1,6 +1,6 @@
-//Using Daniel Shiffman's Toy Neural Network code (at bottom)
+//Using Daniel Shiffman's Toy Neural Network library
 
-const TOTAL = 100;
+const TOTAL = 200;
 let dotPairs = [];
 let allDotPairs = [];
 let obstacles = [];
@@ -54,7 +54,7 @@ function draw() {
         //Generate Obstacle
         if (--nextGap === 0) {
             generateObstacle();
-            nextGap = round(random(30, 60));
+            nextGap = round(random(50, 60));
         }
         // if (counter % 35 == 0 && random() < 0.7) generateObstacle();
 
@@ -89,7 +89,8 @@ function draw() {
 }
 
 function generateObstacle() {
-    let type = random() < 0.66 ? (random() < 0.5 ? 0 : 1) : 2;
+    // let type = random() < 0.66 ? (random() < 0.5 ? 0 : 1) : 2;
+    let type = random() < 0.5 ? 0 : 1;
     let dir = random() < 0.5 ? 1 : -1;
     switch (type) {
         case 0: {

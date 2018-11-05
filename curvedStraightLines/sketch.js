@@ -1,12 +1,12 @@
 var left = [], right = [], up = [], down = [];
 var points;
-var columns = 10;
+var columns = 200;
 var xoff = 0; yoff = 1000;
 var hue = 0;
 var hueOff = 0;
 
 function setup() {
-	createCanvas(400, 400);
+	createCanvas(window.innerWidth, window.innerHeight);
 	for (var i = 0; i < columns; i++) {
 		left[i] = {x: 10, y: (height-10)/columns*i+10};
 		right[i] = {x: width - 10, y: (height-10)/columns*i+10};

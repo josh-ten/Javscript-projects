@@ -10,7 +10,6 @@ class Tower {
     }
 
     update() {
-        var mouse = createVector(mouseX, mouseY);
         var closest = this.findClosestEnemy();
         if (closest != -1) this.direction = enemies[closest].pos.copy().sub(this.pos);
         this.rotation = this.direction.heading() + (Math.PI/2);
