@@ -13,11 +13,11 @@ function setup() {
 }
 
 function draw() {
-  background(30);
+  background(255);
   // image(backgroundImg, 0, 0, width, height);
   
-  fill(255);
-  // noStroke();
+  fill(53, 138, 207);
+  noStroke();
   strokeWeight(1);
   beginShape();
 

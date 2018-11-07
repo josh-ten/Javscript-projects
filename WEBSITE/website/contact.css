@@ -32,9 +32,6 @@ img {
   overflow: hidden;
   height: 1em;
 }
-.socialItem .image {
-
-}
 .socialItem:hover .image {
   top: 30px;
 }

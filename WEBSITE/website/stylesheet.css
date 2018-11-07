@@ -1,6 +1,6 @@
 html {
     font-size: 20px;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Raleway', sans-serif;
     /* cursor: none;  */
 }
 
@@ -9,25 +9,24 @@ html {
 }
 
 h1 {
-    margin-left: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px; 
-    font-size: 60px;
+    /* margin-left: 40px; */
+    font-size: 3em;
     color: var(--primary-text);
     letter-spacing: 10px;
     word-spacing: 30px;
 }
 
 #site-title {
-    width: 100%;
-    height: 130px;
+    width: fit-content;
+    margin: 20px;
+    padding-bottom: 1em;
     position: relative;
 }
-#site-title .text {
-    position: absolute;
-    display: inline-block;
-    left: 0px;
-    /* mix-blend-mode: difference; */
+#site-title  {
+    /* position: absolute; */
+    /* display: inline-block; */
+    /* left: 0px; */
+    mix-blend-mode: color-burn;
 }
 
 body {
@@ -36,6 +35,7 @@ body {
 }
 
 .content {
+    align-content: center;
     background-color: var(--primary-background);
     padding: 10px;
     margin-top: 50px;
@@ -46,7 +46,6 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    /* opacity: 0.7; */
 }
 #defaultCanvas0 {
     width: 100%;

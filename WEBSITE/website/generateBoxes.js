@@ -48,7 +48,7 @@ function generateBox(name, url, imageUrl, strDescription) {
     imageContainer.appendChild(overlay);
     link.appendChild(imageContainer);
     item.appendChild(link);
-    item.appendChild(description);
+    // item.appendChild(description);
 
     container.appendChild(item);
 }
