@@ -1,10 +1,22 @@
 [
     { 
+        "title": "Pendulum",
+        "url": "pendulum/index.html",
+        "imageUrl": "pendulum/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "Rainbow Keys",
+        "url": "rainbowKeys/index.html",
+        "imageUrl": "rainbowKeys/demo.png",
+        "description": ""
+    },
+    { 
         "title": "Windows 7 Bubbles",
         "url": "windows7bubbles/index.html",
         "imageUrl": "windows7bubbles/demo.png",
         "description": "The bubbles from that windows 7 screensaver but cooler"
-    },   
+    },
 	{ 
         "title": "Box City",
         "url": "boxCity/index.html",
@@ -77,7 +89,8 @@
         "title": "Fractal Tree",
         "url": "fractalTree/index.html",
         "imageUrl": "fractalTree/demo.gif",
-        "description": "Psychadelic fractal tree :O"
+        "description": "Psychadelic fractal tree :O",
+        "exclude": "true"
     },
     { 
         "title": "Flowing Particles",
@@ -89,13 +102,15 @@
         "title": "Orbit Particles",
         "url": "orbitParticles/index.html",
         "imageUrl": "orbitParticles/demo.png",
-        "description": "Orbit Particles: A neat visualiser of gravity-like controlled flowing colourful particles."
+        "description": "Orbit Particles: A neat visualiser of gravity-like controlled flowing colourful particles.",
+        "exclude": "true"
     },
     { 
         "title": "Fireworks",
         "url": "sineParticlesFireworks/index.html",
         "imageUrl": "sineParticlesFireworks/demo.gif",
-        "description": "Fireworks: A neat visualiser particles which shoot fireworks onclick."
+        "description": "Fireworks: A neat visualiser particles which shoot fireworks onclick.",
+        "exclude": "true"
     },
     { 
         "title": "Egg Inc",
@@ -105,9 +120,63 @@
         "exclude": "true"
     },
     { 
-        "title": "",
-        "url": "",
-        "imageUrl": "",
+        "title": "Attractive Bubbles",
+        "url": "attractiveBubbles/index.html",
+        "imageUrl": "attractiveBubbles/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "Click Click Click",
+        "url": "clickClickClick/index.html",
+        "imageUrl": "clickClickClick/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "Fluid Simulator",
+        "url": "fluid/index.html",
+        "imageUrl": "fluid/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "Melbourne Storm",
+        "url": "melbourneStorm/index.html",
+        "imageUrl": "melbourneStorm/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "Soft",
+        "url": "soft/index.html",
+        "imageUrl": "soft/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "Sunflower Generator",
+        "url": "sunflowerGenerator/index.html",
+        "imageUrl": "sunflowerGenerator/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "Dancing Bois",
+        "url": "dancingBois/index.html",
+        "imageUrl": "dancingBois/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "Lissajous Curve",
+        "url": "lissajousCurve/index.html",
+        "imageUrl": "lissajousCurve/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "UNO WHAT IT IS",
+        "url": "unoWhatItIs/index.html",
+        "imageUrl": "unoWhatItIs/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "[[Untitled]]",
+        "url": "untitled/index.html",
+        "imageUrl": "untitled/demo.png",
         "description": ""
     },
     { 
