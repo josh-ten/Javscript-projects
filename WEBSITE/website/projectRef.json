@@ -12,6 +12,66 @@
         "description": ""
     },
     { 
+        "title": "Attractive Bubbles",
+        "url": "attractiveBubbles/index.html",
+        "imageUrl": "attractiveBubbles/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "Click Click Click",
+        "url": "clickClickClick/index.html",
+        "imageUrl": "clickClickClick/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "Fluid Simulator",
+        "url": "fluid/index.html",
+        "imageUrl": "fluid/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "Melbourne Storm",
+        "url": "melbourneStorm/index.html",
+        "imageUrl": "melbourneStorm/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "Soft",
+        "url": "soft/index.html",
+        "imageUrl": "soft/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "Sunflower Generator",
+        "url": "sunflowerGenerator/index.html",
+        "imageUrl": "sunflowerGenerator/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "Dancing Bois",
+        "url": "dancingBois/index.html",
+        "imageUrl": "dancingBois/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "Lissajous Curves",
+        "url": "lissajousCurve/index.html",
+        "imageUrl": "lissajousCurve/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "UNO WHAT IT IS",
+        "url": "unoWhatItIs/index.html",
+        "imageUrl": "unoWhatItIs/demo.png",
+        "description": ""
+    },
+    { 
+        "title": "[[Untitled]]",
+        "url": "untitled/index.html",
+        "imageUrl": "untitled/demo.png",
+        "description": ""
+    },
+    { 
         "title": "Windows 7 Bubbles",
         "url": "windows7bubbles/index.html",
         "imageUrl": "windows7bubbles/demo.png",
@@ -118,66 +178,6 @@
         "imageUrl": "EggInc/demo.png",
         "description": "Egg Inc: A copycat of the app Egg Inc.",
         "exclude": "true"
-    },
-    { 
-        "title": "Attractive Bubbles",
-        "url": "attractiveBubbles/index.html",
-        "imageUrl": "attractiveBubbles/demo.png",
-        "description": ""
-    },
-    { 
-        "title": "Click Click Click",
-        "url": "clickClickClick/index.html",
-        "imageUrl": "clickClickClick/demo.png",
-        "description": ""
-    },
-    { 
-        "title": "Fluid Simulator",
-        "url": "fluid/index.html",
-        "imageUrl": "fluid/demo.png",
-        "description": ""
-    },
-    { 
-        "title": "Melbourne Storm",
-        "url": "melbourneStorm/index.html",
-        "imageUrl": "melbourneStorm/demo.png",
-        "description": ""
-    },
-    { 
-        "title": "Soft",
-        "url": "soft/index.html",
-        "imageUrl": "soft/demo.png",
-        "description": ""
-    },
-    { 
-        "title": "Sunflower Generator",
-        "url": "sunflowerGenerator/index.html",
-        "imageUrl": "sunflowerGenerator/demo.png",
-        "description": ""
-    },
-    { 
-        "title": "Dancing Bois",
-        "url": "dancingBois/index.html",
-        "imageUrl": "dancingBois/demo.png",
-        "description": ""
-    },
-    { 
-        "title": "Lissajous Curve",
-        "url": "lissajousCurve/index.html",
-        "imageUrl": "lissajousCurve/demo.png",
-        "description": ""
-    },
-    { 
-        "title": "UNO WHAT IT IS",
-        "url": "unoWhatItIs/index.html",
-        "imageUrl": "unoWhatItIs/demo.png",
-        "description": ""
-    },
-    { 
-        "title": "[[Untitled]]",
-        "url": "untitled/index.html",
-        "imageUrl": "untitled/demo.png",
-        "description": ""
     },
     { 
         "title": "",
