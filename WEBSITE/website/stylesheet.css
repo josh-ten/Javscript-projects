@@ -5,6 +5,10 @@ html {
     color: var(--primary-text);
 }
 
+p {
+    color: var(--primary-text);
+}
+
 * {
     box-sizing: border-box;
 }
