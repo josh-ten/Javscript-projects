@@ -13,9 +13,7 @@ class Tower {
         var closest = this.findClosestEnemy();
         if (closest != -1) this.direction = enemies[closest].pos.copy().sub(this.pos);
         this.rotation = this.direction.heading() + (Math.PI/2);
-        for (var i = 0; i < this.bullets.length; i++) {
-            this.bullets[i].update();
-        }
+        this.bullets.forEach(b => b.update());
         //Grey halo when selected
         if (this.selected) {
             strokeWeight(1);
@@ -23,7 +21,6 @@ class Tower {
             fill(0, 50);
             ellipse(this.pos.x, this.pos.y, this.range, this.range);
         }
-        this.draw();
         this.removeBullets();
     }
 

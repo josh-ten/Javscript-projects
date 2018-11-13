@@ -2,11 +2,13 @@ var bubbles = [];
 var minsize = 20;
 var score = 0;
 var hue;
+var picture;
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   hue = random(255);
   colorMode(HSB);
+  picture = loadImage('avatar.jpg');
 
   bubbles.push(new Bubble(width/2, height/2, 0, 0, height*0.8));
 }
@@ -20,6 +22,8 @@ function draw() {
   for (let bubble of bubbles) {
     bubble.update();
   }
+
+  mousePressed();
 }
 
 function mousePressed() {
@@ -47,7 +51,7 @@ class Bubble {
     this.pos = createVector(x, y);
     this.vel = createVector(xvel, yvel);
     this.size = size;
-    this.babycount = 5;
+    this.babycount = 4;
   }
   
   update() {
@@ -63,7 +67,9 @@ class Bubble {
   draw() {
     fill(hue, 255, 255);
     noStroke(); 
-    ellipse(this.pos.x, this.pos.y, this.size, this.size);
+    // ellipse(this.pos.x, this.pos.y, this.size, this.size);
+
+    image(picture, this.pos.x-this.size/2, this.pos.y-this.size/2, this.size, this.size);
   }
   
   subdivide() {

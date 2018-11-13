@@ -2,10 +2,10 @@ var itemOnMouse;
 var selectedTower;
 
 function mousePressed() {
-	//Add Tower
 	if (mousePos.x < width - 300) {
+		//Add Tower
 		if (selectedTower) selectedTower.selected = false;
-		if (itemOnMouse) {			
+		if (itemOnMouse) {
 			var newTower;
 			if (itemOnMouse.id == "basic")
 				newTower = new BasicTower(mouseX, mouseY);
@@ -15,12 +15,14 @@ function mousePressed() {
 			selectedTower = newTower;
 			newTower.selected = true;
 			towers.push(newTower);
-		}
-		for (var i = 0; i < towers.length; i++) {
-			if (mousePos.copy().sub(towers[i].pos).mag() < towers[i].size) {
-				towers[i].selected = true;
-				selectedTower = towers[i];
-				break;
+		} else {
+			//Click on existing tower
+			for (var i = 0; i < towers.length; i++) {
+				if (withinRange(mousePos, towers[i].pos, towers[i].size)) {
+					towers[i].selected = true;
+					selectedTower = towers[i];
+					break;
+				}
 			}
 		}
 	}
@@ -33,12 +35,12 @@ function mousePressed() {
 		}
 		else {
 			//Click on tower item
-			for (var i = 0; i < gui.items.length; i++) {
-				if (mousePos.copy().sub(gui.items[i].pos).mag() < gui.items[i].size) {
-					gui.items[i].clicked();
-					itemOnMouse = gui.items[i];
+			gui.items.forEach(item => {
+				if (withinRange(mousePos, item.pos, item.size)) {
+					item.clicked();
+					itemOnMouse = item;
 				}
-			}
+			});
 		}
 	}
 }

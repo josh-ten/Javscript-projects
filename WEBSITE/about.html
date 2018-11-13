@@ -7,11 +7,7 @@
         <link rel='stylesheet' href='website/content.css' type='text/css' />
         <link rel='stylesheet' href='website/contact.css' type='text/css' />
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-        <script src="projects/p5.min.js"></script>
-        <script src="projects/addons/p5.dom.min.js"></script>
-        <script src='website/backgroundCross/sketch.js'></script>
         <script type="text/javascript" src="website/packages/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="website/packages/imagesloaded.pkgd.js"></script>
         
         <title>Josh Ten JS</title>    
         <meta charset="utf-8">
@@ -27,15 +23,22 @@
 
         <div id='contactDetails'>
             <h1>Who am I?</h1>
-            <p>I've been asking myself that same question for a while now. haha</p>
-            <p>I'm undertaking a Bachelor of Software Engineering in Melbourne.</p>
-            <p>I've been programming for the past 
-                <script type='text/javascript'>
-                    document.write(new Date().getFullYear() - 2013);
-                </script>
-            years, while I've been focusing on JavaScript more recently. I was inspired 
-            by Daniel Shiffman's YouTube videos to get creative with the p5.js library,
-            which I've used to create all of the projects you can see on this portfolio.</p> 
+            <div style='display: grid; grid-template-columns: 1fr 2fr'>
+                <div>
+                    <img src='./website/avatar.jpg' style='siz width:100%; height: 100%;'/>
+                </div>
+                <div>
+                    <p>I've been asking myself that same question for a while now. haha</p>
+                    <p>I'm undertaking a Bachelor of Software Engineering in Melbourne.</p>
+                    <p>I've been programming for the past 
+                        <script type='text/javascript'>
+                            document.write(new Date().getFullYear() - 2013);
+                        </script>
+                    years, while I've been focusing on JavaScript more recently. I was inspired 
+                    by Daniel Shiffman's YouTube videos to get creative with the p5.js library,
+                    which I've used to create all of the projects you can see on this portfolio.</p> 
+                </div>
+            </div>
         </div>
         
         <div class="footer">

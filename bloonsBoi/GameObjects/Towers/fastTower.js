@@ -2,12 +2,11 @@ class FastTower extends Tower {
     constructor(x, y) {
         super(x, y);
 
-        this.range = 500;
-        this.shootingInterval = 30;
+        this.range = 200;
+        this.shootingInterval = 100;
 
         setInterval(() => {
             if (enemies.length > 0) {
-                // console.log("Basic fire");                
                 var closestEnemyIndex = this.findClosestEnemy();
                 if (closestEnemyIndex != -1)
                     this.fire(enemies[closestEnemyIndex].pos);
@@ -15,7 +14,6 @@ class FastTower extends Tower {
         }, this.shootingInterval);
 
         var dir = this.direction.heading() + (Math.PI/2);
-        // this.bulletOffset = createVector(Math.cos(dir), Math.sin(dir)).mult(this.size/2);    
     }
 
     draw() {

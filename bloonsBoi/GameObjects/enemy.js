@@ -5,12 +5,14 @@ class Enemy {
         this.size = 50;
         this.speed = 5;
         this.nextTrackPoint;
-        if (track.trackPoints[1] != null) 
+        if (track.trackPoints[1]) 
             this.nextTrackPoint = track.trackPoints[1];
         this.trackPointCnt = 0;
+        this.remove = false;
     }
 
     update() {
+        //Move onto next track point
         if (this.pos.copy().sub(this.nextTrackPoint).mag() < 10) {
             if (track.trackPoints.length > this.trackPointCnt) {
                 var tp = this.nextTrackPoint;
@@ -21,7 +23,7 @@ class Enemy {
             }
         }
         this.pos.add(this.vel);
-        this.draw();
+        if (this.pos.x > width) this.remove = true;
     }
 
     draw() {

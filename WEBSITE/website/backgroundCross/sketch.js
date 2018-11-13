@@ -3,9 +3,9 @@ let backgroundImg;
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-	canvas = document.getElementById("defaultCanvas0");
-	var container = document.getElementById("canvasContainer");
-  container.appendChild(canvas);  
+	let canvas = document.getElementById("defaultCanvas0");
+	let container = document.getElementById("canvasContainer");
+  container.appendChild(canvas);
   
   ratio = width / height;
 

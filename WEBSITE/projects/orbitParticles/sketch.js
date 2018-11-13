@@ -20,10 +20,10 @@ function draw() {
 	}
 	// averageSpeed /= particles.length;
 	
-	//if (frameRate() >= 50)
-		//particles.push(new Particle(random(width), random(height)));
-	//else if (particles.length > 0)
-		//particles.splice(0, 1);
+	if (frameRate() >= 50)
+		particles.push(new Particle(random(width), random(height)));
+	else if (particles.length > 0)
+		particles.splice(0, 1);
 }
 
 function mouseClicked() {

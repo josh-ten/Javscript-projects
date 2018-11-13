@@ -1,7 +1,9 @@
 class Track {
     constructor(track) {
         this.trackPoints = [];
-        if (track == "sampleMap") this.initDefaultMap();
+        switch(track) {
+            case "sampleMap": this.initDefaultMap(); break;
+        }
     }
 
     addTrackPoint(x, y) {

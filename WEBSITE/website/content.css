@@ -62,11 +62,11 @@
 .image img {
     width: 101%;
     object-fit: cover;
-    filter: grayscale(100%);
     transition: all .3s ease;
+    filter: none;
 }
 .item:hover img {
-    filter: none;
+    filter: hue-rotate(40deg) blur(1.5px) brightness(180%);
 }
 
 .item:hover .image {
@@ -75,8 +75,9 @@
 }
 
 .item:hover .overlay {
-    background-color: rgba(0, 0, 0, 0.6);  
+    /* background-color: rgba(0, 0, 0, 0.6);   */
     color: white;
+    text-shadow: 0 0 3px black;
 }
 
 .description {
